@@ -1,9 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
+$gray-medium-light: #eaeaea; 
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -103,6 +101,24 @@ footer {
   }
 }
 
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+    ul {
+      float: none;
+      padding: 0;
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 /* miscellaneous */
 
 .debug_dump {
@@ -111,8 +127,6 @@ footer {
   width: 100%;
   margin-top: 45px;
 }
-
-
 
 /* sidebar */
 
@@ -151,6 +165,8 @@ aside {
   margin-top: 15px;
 }
 
+/* forms */
+
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -161,10 +177,6 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
-
-/* forms */
-
-
 
 #error_explanation {
   color: red;
@@ -179,4 +191,10 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
 }
