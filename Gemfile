@@ -20,6 +20,11 @@ gem "bcrypt",          "3.1.18"
 #scss
 gem "bootstrap-sass",  "3.4.1"
 
+gem "faker",           "2.21.0"
+
+gem "will_paginate",           "3.3.1"
+gem "bootstrap-will_paginate", "1.0.0"
+
 group :development, :test do
   gem "debug",   "1.7.1", platforms: %i[ mri mingw x64_mingw ]
 end
