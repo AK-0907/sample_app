@@ -23,5 +23,7 @@ module SampleApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    #https://railstutorial.jp/chapters/user_microposts?version=7.0#sec-a_proto_feed:~:text=7.0-,config.active_storage.variant_processor%20%3D%20%3Amini_magick,-end%0Aend
+    config.active_storage.variant_processor = :mini_magick
   end
 end

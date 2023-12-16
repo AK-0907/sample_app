@@ -77,7 +77,7 @@ class LogoutTest < Logout
     delete logout_path
     assert_redirected_to root_url
   end
-end
+end 
 
 class RememberingTest < UsersLogin
 
